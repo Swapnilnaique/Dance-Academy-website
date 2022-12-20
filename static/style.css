@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    height: 120vh;
+
+body {
+    min-height: 100vh;
 }
 
 #navbar {
@@ -85,7 +87,6 @@ ul li a {
 #sponsers {
     border-top: 2px solid whitesmoke;
     border-bottom: 2px solid whitesmoke;
-    /* background-color: black; */
     color: white;
     height: 333px;
     background: url(../static/sponsorbg.jpg);
@@ -138,9 +139,81 @@ ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 40px;
     background-color: #000000;
     color: white;
     padding: 15px;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.contact {
+    font-family: 'Caramel', cursive;
+    display: flex;
+    width: 80%;
+    height: 500px;
+    top: 80px;
+    left: 100px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.inp input,
+textarea {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 52px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    font-size: medium;
+}
+
+#con {
+    margin: 10px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 75px;
+    height: 44px;
+    color: rgb(255, 255, 255);
+}
+
+#con:hover {
+    color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 0%);
+}
+
+.inp,
+form {
+    font-family: 'Caramel', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+/* contact head */
+.conhead {
+    font-size: 4rem;
+    color: white;
+}
+div.bg{
+    background: url(../static/kazuo-ota-lqE2wnS8CrI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
 }

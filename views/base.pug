@@ -4,8 +4,17 @@ html
     title www.GPTDanceAcademy.com
     block scripts
     block style 
+        style
+            include ../static/style.css
   body
+    nav#navbar
+        ul
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") services ]
+            li #[a(href="/") Contect us ]
     block content
+      
     block foot 
         section#footer 
             | Copyright © 2022 GPT Dance Academy.com | All Rights Reserved
