@@ -1,0 +1,39 @@
+extends base.pug
+
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    nav#navbar
+        ul
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") services ]
+            li #[a(href="/") Contect us ]
+    section#intro 
+        h1#head Welcome To GPT Dance Academy
+        div#buttons
+                button#btn Contect Us 
+                button#btn Join Now 
+ 
+    section#sponsers 
+       h1#spon our sponsors
+       div.box
+     
+        div.card
+            div.boximg
+                img(src='../static/person.svg')
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem placeat nobis obcaecati molestias quibusdam ea omnis debitis minus temporibus impedit, repellat ex earum distinctio fugit quod, laborum enim, sed magni!
+     
+        div.card
+            div.boximg
+               img(src='../static/person.svg')
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem placeat nobis obcaecati molestias quibusdam ea omnis debitis minus temporibus impedit, repellat ex earum distinctio fugit quod, laborum enim, sed magni!
+    
+        div.card
+            div.boximg
+               img(src='../static/person.svg')
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem placeat nobis obcaecati molestias quibusdam ea omnis debitis minus temporibus impedit, repellat ex earum distinctio fugit quod, laborum enim, sed magni!
+
